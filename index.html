@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+  <p id="this_is_a_paragraph">Hello World</p>
+<script>
+    //alert('Alerts are used to indicate events, but they are not used much these days!');
+    //this is a javascript comment
+    function buttonClick(message) {
+        var paragraph=document.getElementById('this_is_a_paragraph');
+        paragraph.innerHTML=message;
+    }
+    //Everything inside script is javascript, also anything inside but not including "
+    //function creates a function which does something (reusable functionality0
+    //var is a variable, variables are named such as paragraph.
+    // Exceptions include this, super, break, it etc
+    //{}braces indicate a block which is code which
+    // will be executed when the function is called
+    //message is an argument; a variable which is passed into the function
+    // these are javascript comments
+</script>
+<button onclick="buttonClick('this is complicated');">Click me</button>
+    <!-- button is html, onclick is javascript -->
+  <br/>
+  <button onclick="buttonClick('this is still complicated');">Click me</button>
+</body>
+</html>
